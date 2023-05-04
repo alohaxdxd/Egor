@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Терминал</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        
+         <div class="container">
+         <img class="logo" src="img/Ресурс 4.png" alt="logo">
+          <ul class="social">
+            <button class="main_buttons" id="open_mts">
+            <li class="social_items mts">
+                <i class="famts"><img class="operator_img" src="img/mts.png" alt=""></i>
+            </li></button>
+            <button class="main_buttons" id="open_beel">
+            <li class="social_items beeline">
+                <i class="fabeeline"><img class="operator_img"src="img/beeline.png" alt=""></i>
+            </li></button>
+            <button class="main_buttons" id="open_mega">
+            <li class="social_items megafon">
+                <i class="famegafon"><img class="operator_img"src="img/megafon.png" alt=""></i>
+            </li></button>
+            <button class="main_buttons" id="open_rost">
+            <li class="social_items rostelecom">
+                <i class="farostelecom"><img class="operator_img" src="img/rostelecom.png" alt=""></i>
+            </li></button>
+            <button class="main_buttons" id="open_tele2">
+                <li class="social_items tele2">
+                    <i class="fatele2"><img class="operator_img"id="tele2_img" src="img/tele2.png" alt=""></i>
+                </li></button>
+          </ul>
+           <div class="pop_up" id="pop_up">
+            <div class="pop_up_container">
+                
+                <div class="pop_up_body">
+                    <p >Пополнить баланс</p>
+                    <form action="">
+                        <input id="tel" data-tel-input type="text" placeholder="Введите номер телефона">
+                        <input  id="summa" type="text"  placeholder="Сумма">
+                        <button onclick = "random()" id="otpravit" type="button">Отправить</button>
+                    </form>
+                    <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                </div>
+            </div>
+           </div>
+           <div id="outcome1" class="outcome">
+            
+                <img class="neuspeh_png" src="img/close.png" alt="">
+                <h1 class="oshibka">Ошибка</h1>
+                <p class="more">Попробуйте снова</p>  
+                <div onClick="refreshPage()" class="pop_up_close" id="outcome_close1">&#10006</div> 
+            </div>
+            <div id="outcome2" class="outcome">
+                <h1 class="uspeh">Успех</h1>
+                <img class="uspeh_png" src="img/tick.png" alt="">
+                <div onClick="refreshPage()" class="pop_up_close" id="outcome_close2">&#10006</div>
+            </div>
+                </div>
+         </div>
+    </main>
+    <script src="main.js">
+    </script>
+</body>
+</html>
+  
