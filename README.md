@@ -1,1 +1,1 @@
-# Egor
+https://alohaxdxd.github.io/Egor/
